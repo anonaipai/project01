@@ -17,7 +17,12 @@ public class Draw {
 	private int HEIGHT = 480;
 
 	Draw() {
-
+		Stuff.deck = new card[5];
+		for (int i = 0; i < 5; i++) {
+		    card noCard = new card("null");
+		    Stuff.deck[i] = noCard;
+		}
+		
 		charater = Stuff.TMObject.cleanImage("charater");
 		frame = new JFrame("Simple RPG");
 		JPanel panel = (JPanel) frame.getContentPane();

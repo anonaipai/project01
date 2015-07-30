@@ -6,7 +6,7 @@ public class card {
 	String name;
 
 	public card(String name) {
-
+		this.name = name;
 	}
 
 	public int getN() {
