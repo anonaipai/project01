@@ -35,7 +35,7 @@ public class TileMap {
 	public BufferedImage getImage(String imageName) {
 		BufferedImage img = null;
 		try {
-			img = ImageIO.read(new File("img\\" + imageName + ".png"));
+			img = ImageIO.read(new File("src\\img\\" + imageName + ".png"));
 		}
 		catch (IOException e) {
 			System.out.println("Looks like we couldn't find the image:" + imageName + ".png");
